@@ -1,7 +1,6 @@
 class Solution:
     def reverse(self, x: int) -> int:
         x = str(x)
-        # print(x[::-1])
         if(x[0] == '-'):
             if(int(x[1:][::-1]) > 2147483648):
                 return 0
