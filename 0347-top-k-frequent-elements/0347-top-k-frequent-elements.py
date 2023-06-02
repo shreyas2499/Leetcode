@@ -16,8 +16,6 @@ class Solution:
         for a in range(len(freq)-1, 0, -1):  # Returns -> Most occuring list in the first
             for l in freq[a]:  # Now looping within each list to get the top K values
                 res.append(l)
-                print(res)
-                print(k)
                 if(len(res) == k):
                     return res
         
