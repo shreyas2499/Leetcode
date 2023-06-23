@@ -8,4 +8,7 @@ class Solution:
         # n = int(s)
         n = n + 1
         b = str(n)
-        return list(b)
+        c = list(b)
+        for i in range(len(c)):
+            c[i] = int(c[i])
+        return c
