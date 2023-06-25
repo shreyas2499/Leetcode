@@ -15,6 +15,6 @@ class Solution:
             if(count[0] > k):
                 count[nums[l]] -= 1
                 l = l + 1
-            
-            res = max(res, r-l+1)
+            else:
+                res = max(res, r-l+1)
         return res
