@@ -3,13 +3,16 @@ class Solution:
         l = 0
         r = 0
         
-        count={}
+        count={
+            0: 0,
+            1: 1
+        }
         res = 0
         
         for r in range(len(nums)):
-            count[nums[r]] = count.get(nums[r], 0) + 1
+            count[nums[r]] = count[nums[r]] + 1
             # if(((r-l+1) - count.get(1, 0) > k)):
-            while(count.get(0, 0) > k):
+            if(count[0] > k):
                 count[nums[l]] -= 1
                 l = l + 1
             
