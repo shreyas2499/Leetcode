@@ -9,7 +9,7 @@ class Solution:
             
 #             To get count of each value in the window
             count[s[r]] = 1 + count.get(s[r], 0)
-            while ((r-l+1)-max(count.values()) > k):
+            if ((r-l+1)-max(count.values()) > k):
                 count[s[l]] = count[s[l]] - 1
                 l = l + 1
                                 
