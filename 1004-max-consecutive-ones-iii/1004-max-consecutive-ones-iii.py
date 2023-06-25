@@ -5,7 +5,7 @@ class Solution:
         
         count={
             0: 0,
-            1: 1
+            1: 0
         }
         res = 0
         
