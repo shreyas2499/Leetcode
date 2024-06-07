@@ -11,11 +11,19 @@ class Solution:
         dummy = head
         
         
+#         while dummy:
+#             if("v" in str(dummy.val)):
+#                 return True
+            
+#             dummy.val = str(dummy.val)+'v'
+#             dummy = dummy.next
+            
+#         return False
+
+        visited = {}
         while dummy:
-            if("v" in str(dummy.val)):
+            if dummy in visited:
                 return True
-            
-            dummy.val = str(dummy.val)+'v'
+            visited[dummy] = 1
             dummy = dummy.next
-            
         return False
